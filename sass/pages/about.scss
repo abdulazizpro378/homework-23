@@ -1,0 +1,240 @@
+@use "../global";
+@use "../abstrcts/variables" as var;
+@use "../abstrcts/mixin" as mixin;
+
+#solve {
+  .solve-row {
+    padding-bottom: 127px;
+
+    .solve-left {
+      padding-top: 22px;
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        color: #282938;
+      }
+
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 74px;
+        max-width: 595px;
+        margin-top: 8px;
+        color: #282938;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 484px;
+        margin-top: 31px;
+
+        color: #282938;
+
+        opacity: 0.7;
+      }
+    }
+
+    .solve-right {
+      padding-top: 18px;
+      img {
+        max-width: 640px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#foccused {
+  padding-bottom: 128px;
+  .foccused-top {
+    background: #f4f5f5;
+    padding: 96px 109px 96px 80px;
+
+    .foccused-left {
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+
+        color: #282938;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 515px;
+        margin-top: 16px;
+
+        color: #282938;
+
+        opacity: 0.7;
+      }
+    }
+
+    .foccused-right {
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+
+        color: #282938;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 515px;
+        margin-top: 16px;
+
+        color: #282938;
+
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .foccused-end {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#meet {
+  background: #f4f6fc;
+  padding-top: 128px;
+
+  .meet-row {
+    .meet-top {
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+
+        text-align: center;
+
+        /* Dark blue */
+
+        color: #282938;
+      }
+    }
+
+    .meet-content {
+      padding-top: 41px;
+      padding-bottom: 110px;
+
+      .meet-card {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        background: #ffffff;
+        padding: 48px 44px 32px 44px;
+        margin-bottom: 18px;
+        overflow: hidden  ;
+        transition: 1s;
+
+        &:hover {
+          .meet-hover{
+            transition: 0.6s;
+            width: 168px;
+            height: 168px;
+          }
+        }
+
+        .meet-hover {
+          position: absolute;
+          bottom: 95px;
+         
+          border-radius: 50%;
+          width: 0px;
+          height: 0px;
+          background: linear-gradient(
+            348.37deg,
+            #5239fa 17.97%,
+            rgba(255, 255, 255, 0) 79.2%
+          );
+          a {
+            position: relative;
+            color: white;
+           top: 110px;
+           left: 50px;
+          }
+        }
+
+        img {
+          max-width: 168px;
+          width: 100%;
+        }
+        h3 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+
+          color: #1d2130;
+        }
+        span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #1d2130;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 650px) {
+  .meet-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+  }
+}
+
+@media (min-width: 700px) {
+  .solve-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 47px;
+
+    .solve-left {
+      margin-top: 130px;
+    }
+    .solve-right {
+      margin-top: 110px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .foccused-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .meet-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

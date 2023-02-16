@@ -1,0 +1,30 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin btn {
+  padding: 16px 56px;
+  font-family: "Poppins" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  border-radius: 41px;
+  transition: 0.5s;
+
+  &:hover {
+    border: 1px solid #fcd980;
+    background: #fcd980;
+    color: #1b1c2b;
+    transform: scale(1.05);
+  } 
+}
+
+@mixin gird($columns, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-column-gap: $gap;
+}
