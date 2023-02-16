@@ -350,8 +350,6 @@ footer .talk-row .talk-left .box {
   max-width: 517px;
   padding: 18px 0 16px 37px;
   background: #fcd980;
-  display: flex;
-  gap: 30px;
 }
 footer .talk-row .talk-left .box .email h4 {
   font-style: normal;
@@ -422,7 +420,8 @@ footer .talk-row .talk-right ul li a i {
     grid-column-gap: 143px;
   }
   .box {
-    flex-direction: column;
+    display: flex;
+    gap: 30px;
   }
 }
 .containe {

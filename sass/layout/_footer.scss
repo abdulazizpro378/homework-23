@@ -23,8 +23,7 @@ footer {
         max-width: 517px;
         padding: 18px 0 16px 37px;
         background: #fcd980;
-        display: flex;
-        gap: 30px;
+        
 
         .email {
           h4 {
@@ -114,6 +113,7 @@ footer {
     }
 
     .box{
-      flex-direction: column;
+      display: flex;
+      gap: 30px;
     }
 }
